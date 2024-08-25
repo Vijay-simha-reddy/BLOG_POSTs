@@ -1,0 +1,107 @@
+/* Form Section */
+.createPost-section {
+    width: 100%;
+    height:88vh;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
+}
+
+.createForm-container{
+    width: 70%;
+    margin: 20px auto;
+    padding: 40px 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.createPost-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #555;
+    font-weight: 500;
+}
+.form-group-image-like{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap:30px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="file"],
+.form-group input[type="number"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+
+.form-group input[type="file"],
+.form-group input[type="number"],
+.form-group #hashtags{
+    width:320px;
+}
+
+
+
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.error-message{
+    color:red;
+    font-size: 12px;
+    font-family: "roboto";
+}
+
+@media (max-width: 768px) {
+    .createPost-section {
+        padding: 20px;
+    }
+    
+    .submit-btn {
+        font-size: 16px;
+    }
+}
