@@ -12,7 +12,7 @@ const UpdateDetails = () => {
     const [errors, setErrors] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:5000/posts/item/${id}`)
+        fetch(`https://blog-posts-beta.vercel.app/posts/item/${id}`)
             .then(response => response.json())
             .then(post => {
                 setTitle(post.title);
@@ -63,7 +63,7 @@ const UpdateDetails = () => {
                 likes: parseInt(likes)
             };
 
-            const url = `http://localhost:5000/posts/${id}`;
+            const url = `https://blog-posts-beta.vercel.app/posts/${id}`;
 
             try {
                 const response = await fetch(url, {

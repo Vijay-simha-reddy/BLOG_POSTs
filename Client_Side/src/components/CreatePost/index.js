@@ -38,7 +38,7 @@ const CreatePost = () => {
         event.preventDefault();
         if (validateForm()) {
             const formData = { title, content, 'hashtags':hashtags.split(' '), likes: parseInt(likes) };
-            const url = `http://localhost:5000/posts`;
+            const url = `https://blog-posts-beta.vercel.app/posts`;
 
             try {
                 const response = await fetch(url, {

@@ -15,7 +15,7 @@ const BlogPostItem = () => {
   useEffect(() => {
     const fetchPostById = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/posts/item/${id}`);
+        const response = await fetch(`https://blog-posts-beta.vercel.app/posts/item/${id}`);
         if (!response.ok) {
           throw new Error('Failed to fetch the post data');
         }

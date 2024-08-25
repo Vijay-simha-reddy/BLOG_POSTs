@@ -12,7 +12,7 @@ const MainContent = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await fetch('http://localhost:5000/posts');
+        const response = await fetch('https://blog-posts-beta.vercel.app/posts');
         if (!response.ok) {
           throw new Error('Failed to fetch posts');
         }
@@ -35,7 +35,7 @@ const MainContent = () => {
 
   const handleDelete = (id) => {
     if (window.confirm(`Are you sure you want to delete this post? ${id}`)) {
-      fetch(`http://localhost:5000/posts/${id}`, {
+      fetch(`https://blog-posts-beta.vercel.app/posts/${id}`, {
         method: 'DELETE',
       })
       .then(response => {
