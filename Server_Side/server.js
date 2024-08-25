@@ -21,8 +21,7 @@ mongoose.connect(mongoURI, {
 app.use('/', postRoutes); 
 
 app.use((err, res) => {
-    console.error(err.stack);
-    res.status(500).send('Something broke!');
+    res.status(200).send('Hello Buddy!');
 });
 
 const PORT = process.env.PORT || 5000;
